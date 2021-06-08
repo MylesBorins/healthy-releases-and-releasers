@@ -35,7 +35,8 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gulp build && gsutil -m rsync -d -r dist gs://kni.sh/healty-releases-and-releasers"
   },
   "license": "Apache-2.0"
 }
